@@ -170,6 +170,9 @@ public class MovementScript : MonoBehaviour
 	}
 
 	public void Death() {
+		if (slowmoStarted) {
+			SlowMotion();
+		}
 		this.enabled = false;
 	}
 
